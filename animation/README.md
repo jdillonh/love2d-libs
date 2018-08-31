@@ -12,7 +12,7 @@ local animation = require "animation.lua"
 ```
 
 
-## Creating a new animation object
+### Creating a new animation object
 The constructor for animation objects is:
     animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rotation])
 
