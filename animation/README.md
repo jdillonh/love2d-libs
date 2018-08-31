@@ -3,7 +3,7 @@
 
 
 This is a library to abstract some of the complicated aspects of drawing sprite-based animations
-in Löve2d. The API is fairly simple and has two main modes.
+in Löve2d. The API is fairly simple and has two main modes, _seconds_ and _frames_. 
 
 
 include it in your project with:
@@ -33,4 +33,4 @@ Every animation object needs to be updated every frame.
 new_anim:update([dt], [x], [y])
 ```
 **dt**: this is the dt value set by `love.update(dt)`, **if it is not included then the _frame_delay_ variable will be treated
-as a number of frames, not a number of seconds**.
+as a number of frames, not a number of seconds**. It is recomended that `:update()` is called within `love.update()`.
