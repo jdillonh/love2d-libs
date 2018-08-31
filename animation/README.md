@@ -28,9 +28,9 @@ new_anim = animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rota
 
 
 ## Updating each animation object
-Every animation object needs to be updated every frame. 
+Every animation object needs to be updated every frame. Call it in `love.update( )`.
 ```lua
 new_anim:update([dt], [x], [y])
 ```
-**dt**: this is the dt value set by `love.update(dt)`, **if it is not included then the _frame_delay_ variable will be treated
-as a number of frames, not a number of seconds**. It is recomended that `:update()` is called within `love.update()`.
+**dt**: this is the dt value set by `love.update(dt)`, For extra control `dt` can be left out, **if it is not included then the _frame_delay_ variable will be treated as a number of update cycles, not a number of seconds**. If you are unsure, inlcude dt.
+
