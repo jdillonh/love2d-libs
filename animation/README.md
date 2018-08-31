@@ -12,10 +12,10 @@ local animation = require "animation.lua"
 ```
 
 
-### Creating a new animation object
+## Creating a new animation object
 The constructor for animation objects is:
 ```lua
-animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rotation])
+new_anim = animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rotation])
 ```
 **path**: is a path to your sprite sheet   
 **n_of_frames**: is the number of frames in your animation  
@@ -25,3 +25,12 @@ animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rotation])
 **sx**: (optional, default = 1) scale factor in the x direction  
 **sy**: (optional, default = 1) scale factor in the y direction  
 **rot**: (optional, default 0) the rotation in radians 
+
+
+## Updating each animation object
+Every animation object needs to be updated every frame. 
+```lua
+new_anim:update([dt], [x], [y])
+```
+**dt**: this is the dt value set by `love.update(dt)`, **if it is not included then the _frame_delay_ variable will be treated
+as a number of frames, not a number of seconds**.
