@@ -44,3 +44,6 @@ new_anim:draw()
 ```
 Takes, no arguments. Nice and easy.
 
+## Etc.
+You should not add new fields to the animation object table, this is to avoid accidetally misspelling keys upon accessing or setting them and having a hard time finding the error. If you really need to, use `rawset()`.
+
