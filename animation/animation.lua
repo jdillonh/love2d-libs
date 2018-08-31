@@ -1,12 +1,3 @@
---[[TODO
---
---  Add global tables for updating and drawing,
---  
---  Add :set_speed etc. methods
---]]
-
-
-
 local anim = {}
 
 anim.meta = {
