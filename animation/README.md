@@ -5,7 +5,7 @@
 This is a library to abstract some of the complicated aspects of drawing sprite-based animations
 in Löve2d.  
 Your sprite sheets must be laid out horizontally: 1st frame all the way to the left, last all the way to the right.  
-![example_sprite_sheet](example_sprite_sheet.png)
+![example_sprite_sheet](example_sprite_sheet.png =100x20)
   
 include it in your project with:
 ```lua
