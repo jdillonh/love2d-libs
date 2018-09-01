@@ -27,4 +27,4 @@ the_state.update()
 the_state.draw()
 ```
 
-Call the `current_state:switch_to(new_state)` method to automatically call the `current_state.exit` function. This method returns the new state, (the one passed in).
+Call the `current_state:switch_to(new_state)` method to automatically call `current_state.exit` and `new_state.load`. This method returns the new state, (the one passed in), so you can set a state varialbe.
