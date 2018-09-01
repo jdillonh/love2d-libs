@@ -6,7 +6,7 @@ This is a library to abstract some of the complicated aspects of drawing sprite-
 in Löve2d.  
 Your sprite sheets must be laid out horizontally: 1st frame all the way to the left, last all the way to the right.  
 
-`<img src="example_sprite_sheet.png" alt="example sprite sheet" width="200" height="1600"/>`
+![](example_sprite_sheet.png)
   
 include it in your project with:
 ```lua
@@ -18,7 +18,7 @@ local animation = require "animation.lua"
 The constructor for animation objects is:
 ```lua
 new_anim = animation.new(path, n_of_frames, frame_delay, x, y, [sx], [sy], [rotation])
-```
+```  
 **path**: is a path to your sprite sheet   
 **n_of_frames**: is the number of frames in your animation  
 **frame_delay**: how long each frame lasts (seconds of update-cycles)  
