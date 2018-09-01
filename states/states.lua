@@ -34,7 +34,7 @@ then attempts to call new state's 'load' function, then returns the new state.
 :returns: the new state's state machine object, (same as input)
 ]]
 function states:switch_to(s)
-  if self and self.exit then self.exit() end
+  if self.exit then self.exit() end
   if s.load then s.load() end
   return s
 end
