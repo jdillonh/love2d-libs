@@ -5,7 +5,7 @@ Each state machine object also has a **exit** function, which is called when tha
 
 ## Creating new state machines
 `states.new(l, u, d, [e])`  
-__l__: load function, called when switching to this state.
-__u__: update function, called every cycle in `love.update`.  
-__d__: draw function, called every frame in `love.draw`.
-__e__: optional exit function, called when leaving this state.
+__l__: load function, called when switching to this state.  
+__u__: update function, called every cycle in `love.update`.    
+__d__: draw function, called every frame in `love.draw`.  
+__e__: optional exit function, called when leaving this state.  
