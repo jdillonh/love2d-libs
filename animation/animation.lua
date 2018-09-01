@@ -34,6 +34,7 @@ anim.meta = {
   :sy: number, y direction scale factor
   :rot: number, rotation in radians
   :add_to_table: WIP - bool, add to global table of animations?
+  :returns: a new animation object
 ]]
 function anim.new(path,n_of_frames,frame_delay,x,y,sx,sy,rot, add_to_table)
   local new = {}    
