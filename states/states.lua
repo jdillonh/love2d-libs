@@ -1,5 +1,5 @@
 
-states = {}
+local states = {}
 
 states.meta = {
   __index = states,
