@@ -3,9 +3,10 @@
 
 
 This is a library to abstract some of the complicated aspects of drawing sprite-based animations
-in Löve2d. The API is fairly simple.
+in Löve2d.  
+Your sprite sheets must be laid out horizontally: 1st frame all the way to the left, last all the way to the right.
 
-
+  
 include it in your project with:
 ```lua
 local animation = require "animation.lua"
