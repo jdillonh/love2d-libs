@@ -18,11 +18,11 @@ __e__: optional exit function, called when leaving this state.
 s2 = states.new( ... )
 the_state = s:switch_to(s2)  
   
-...   
+--in love.update   
   
 the_state.update()  
   
-...  
+--in love.draw  
   
 the_state.draw()
 ```
