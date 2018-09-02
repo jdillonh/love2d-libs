@@ -15,6 +15,8 @@ __e__: optional exit function, called when leaving this state.
 
 ## Switching states
 ```lua
+--continued
+
 s2 = states.new( ... )
 the_state = s:switch_to(s2)  
   
