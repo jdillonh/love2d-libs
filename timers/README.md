@@ -29,3 +29,17 @@ which will update just my_timer.
 __dt__: delta time, from ```love.update``` 
   
 _Do not call :update(dt) on a timer that has been added to the global table. It will finish too soon._  
+
+
+## Monitor your timers
+Using `print` or `tostring` on a timer yeilds the following result:
+```lua
+> print(my_timer) 
+
+Timer object:
+Duration = 2
+Time left = 1
+In global table = False
+```
+
+
