@@ -30,6 +30,11 @@ __dt__: delta time, from ```love.update```
   
 _Do not call :update(dt) on a timer that has been added to the global table. It will finish too soon._  
 
+### Restart a timer
+```lua
+my_timer:restart()
+```
+will start the timer over again.
 
 ## Monitor your timers
 Using `print` or `tostring` on a timer yeilds the following result:
