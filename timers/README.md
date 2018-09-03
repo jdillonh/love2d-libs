@@ -40,6 +40,10 @@ Timer object:
 Duration = 2
 Time left = 1.25
 In global table = False
+```  
+You can check if a given timer is finished like this:
+```lua
+my_timer:is_finished()
 ```
 
 
