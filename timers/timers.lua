@@ -15,13 +15,18 @@ timers.meta = {
     return s
   end,
 }
-
+--[[
+:duration: number, how many seconds this timer will last
+:on_completion: function (optional), will be called when the timer is finished
+:keep_track: boolean, to add this timer to the global table: timers.all
+:returns: table, a new timer object
+]]
 function timers.new(duration, on_completion, keep_track)
   newbie = {
     duration = duration,
     time_left = duration,
     keep_track = keep_track or false,
-    on_completion = on_completion
+    on_completion = on_completion 
   }
   setmetatable(newbie, timers.meta)
   if keep_track then 
@@ -30,6 +35,11 @@ function timers.new(duration, on_completion, keep_track)
   return newbie
 end
 
+--[[
+:self: a timer
+:dt: number, delta time
+:returns: boolean, true if the timer is done, false otherwise
+]]
 function timers:update(dt)
   if not dt then error("timers:update requires dt") end
   self.time_left = self.time_left - dt
@@ -43,6 +53,10 @@ function timers:update(dt)
   end
 end
 
+--[[
+:self: a timer
+:returns: boolean, true if timer is finished, false otherwise
+]]
 function timers:is_finished()
   if self.time_left <= 0 then
     return true
@@ -51,6 +65,9 @@ function timers:is_finished()
   end
 end
 
+--[[
+:self: the timer to be restarted
+]]
 function timers:restart()
   self.time_left = self.duration
 end
