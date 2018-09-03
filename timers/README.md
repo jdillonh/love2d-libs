@@ -38,7 +38,7 @@ Using `print` or `tostring` on a timer yeilds the following result:
 
 Timer object:
 Duration = 2
-Time left = 1
+Time left = 1.25
 In global table = False
 ```
 
