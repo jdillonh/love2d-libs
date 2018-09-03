@@ -16,7 +16,11 @@ __on_completion__ function, will be called once the timer is completed. Default:
 __add_to_global_table__ boolean, add this timer to the global `timer.all` table. See  [below](https://github.com/jdillonh/love2d-libs/blob/master/timers/README.md#updating-timers). Default: false.
 
 ## Updating timers
-`timer.update_all(dt)` will automatically update all of the timers in the global `timer.all` table, and automatically delete them when they are finished.  
+```lua
+timer.update_all(dt)
+```
+will automatically update all of the timers in the global `timer.all` table, and automatically delete 
+them when they are finished.  
 Otherwise use:  
 ```lua 
 my_timer:update(dt)
