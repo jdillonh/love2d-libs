@@ -27,7 +27,7 @@ my_timer:update(dt)
 ```
 which will update just my_timer.  
 __dt__: delta time, from ```love.update```   
-__returns__:__true__ if the timer is finished, __false__ if not.  
+__returns__: __true__ if the timer is finished, __false__ if not.  
   
 _Do not call :update(dt) on a timer that has been added to the global table. It will finish too soon._  
 
