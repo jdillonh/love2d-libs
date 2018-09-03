@@ -25,6 +25,7 @@ Otherwise use:
 ```lua 
 my_timer:update(dt)
 ```
+which will update just my_timer.
 __dt__: delta time, from ```love.update``` 
   
 _Do not call :update(dt) on a function that has been added to the global table. It will finish in half it's duration._  
