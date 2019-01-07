@@ -6,10 +6,10 @@ The purpose of this is to make resizeable windows easier, espescially for pixel 
 
 
 In `love.draw`:  
-window.start\_draw()
+`window.start_draw()`
 before drawing anything. this will set the canvas to the smaller canvas that you want.
-window.end\_draw() 
+`window.end_draw()`
 this will draw the canvas in the appropriate size on the main canvas, with appropriate borders and stuff
 before drawing anything. this will set the canvas to the smaller canvas that you want.
-window.end\_draw() 
+`window.end_draw()` 
 this will draw the canvas in the appropriate size on the main canvas, with appropriate borders and stuff.
