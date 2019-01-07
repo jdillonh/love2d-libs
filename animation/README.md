@@ -9,7 +9,7 @@ Your sprite sheets must be laid out horizontally: 1st frame all the way to the l
   
 include it in your project with:
 ```lua
-local animation = require "animation.lua"
+local animation = require("path/to/animation")
 ```
 
 
