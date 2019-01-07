@@ -5,7 +5,7 @@ Intended for use with version 11.x
 
 So far there are 3 libraries!
 
-### window.lua
+### ![window.lua](window/)
 Makes pixel art games with resizable windows easier.
 
 ### animation.lua
