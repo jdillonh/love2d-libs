@@ -1,6 +1,6 @@
 The purpose of this library is to make resizeable windows easier, espescially for pixel art games but it should work for high res stuff too.
 
-Call `import(path/to/window)` to use it.
+Call `import('path/to/window')` to use it.
 
 ### Load
 
