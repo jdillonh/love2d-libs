@@ -1,4 +1,4 @@
-The purpose of this library is to make resizeable windows easier, espescially for pixel art games but it should work for high res stuff too.
+The purpose of this library is to make drawing games with resizable windows easier, especially pixel art games.
 
 ```lua
 import('path/to/window')
