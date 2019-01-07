@@ -10,7 +10,7 @@ import('path/to/window')
 ## Load
 
 ```lua
-function window.load(resx, resy, sizex, sizey, [table], [background_color], [draw_to_background])
+function window.setup(resx, resy, sizex, sizey, [table], [background_color], [draw_to_background])
 ```
 This function sets it all up. It creates a new canvas (the "virtual" canvas) which your game will be rendered on.
 
