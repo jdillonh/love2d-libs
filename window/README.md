@@ -2,6 +2,9 @@ The purpose of this library is to make drawing games with resizable windows easi
 
 
 ![demo gif](demo.gif)
+_note: the stretching of the image is due to Love2D, may vary between platforms and versions._
+
+
 
 Include it with:  
 
