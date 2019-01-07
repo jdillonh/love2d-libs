@@ -1,6 +1,8 @@
 The purpose of this library is to make drawing games with resizable windows easier, especially pixel art games.
 
 
+![demo gif](demo.gif)
+
 Include it with:  
 
 ```lua
