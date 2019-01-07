@@ -1,11 +1,9 @@
-The purpose of this is to make resizeablewindows easier, espescially for pixel art games but it should work for high res stuff too.
+The purpose of this is to make resizeable windows easier, espescially for pixel art games but it should work for high res stuff too.
 
 
 `function window.load(resx, resy, sizex, sizey)` will set it all up.
 
 
-In `love.update`:  
-you must call `window.update()` which will setup the canvas drawing math.
 
 In `love.draw`:  
 window.start\_draw()
