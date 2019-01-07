@@ -30,19 +30,13 @@ No updating necessary! The math is pretty simple and is done during the draw pro
 ```lua
 window.start_draw()
 ```
-
+Call this function before drawing anything, it will setup the draw process.
 ```lua
 window.end_draw()
 ```
+Call this function after you have drawn your game.
 
-before drawing anything. This will set the global draw canvas.
 
-Then you draw your game like normal.
-
-this will draw the canvas in the appropriate size on the main canvas, with appropriate borders and stuff
-before drawing anything. this will set the canvas to the smaller canvas that you want.
-`window.end_draw()` 
-this will draw the canvas in the appropriate size on the main canvas, with appropriate borders and stuff.
 
 ## Mouse
 ```lua
@@ -53,5 +47,5 @@ window.mouse_x()
 window.mouse_y()
 ```
 
-Calling the usual `love.mouse.getX()`, `love.mouse.getY()` and `love.mouse.getPosition()` will return the x and y position of the mouse over the main canvas, `window.mouse_x()` and `window.mouse_y` will return the x and y osition of the pixel under the mouse on the virtual canvas.
+Calling the usual `love.mouse.getX()`, `love.mouse.getY()` and `love.mouse.getPosition()` will return the x and y position of the mouse over the main canvas, `window.mouse_x()` and `window.mouse_y` will return the x and y position of the pixel under the mouse on the virtual canvas.
 
