@@ -16,7 +16,7 @@ __resy__: the y resolution of the virtual canvas
 __sizex__: the x dimension of the window in real pixels  
 __sizey__: the y dimension of the window in real pixels  
 
-__table__: This is the table passed into `love.graphics.setMode(x, y, {this table here})` see ![the wiki](https://love2d.org/wiki/love.window.setMode)  
+__table__: This is the table passed into `love.graphics.setMode(x, y, {this table here})` see [the wiki](https://love2d.org/wiki/love.window.setMode).  
 
 __background_color__: the color of the borders  
 __draw_to_background__: a function to be called on the background, behind the virtual canvas
