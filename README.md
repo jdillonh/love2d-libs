@@ -5,11 +5,11 @@ Intended for use with version 11.x
 
 So far there are 3 libraries!
 
-### [window.lua](window/)
+### [window.lua](window)
 Makes pixel art games with resizable windows easier.
 
-### animation.lua
+### [animation.lua](animation)
 Turns simple sprite sheets into easy to use animations.
 
-### timers.lua
+### [timers.lua](timers)
 Make easy timers to script your time based events.
